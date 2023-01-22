@@ -28,6 +28,36 @@
         window.onload = function () {
             sort1();
         }
+
+        function norinori() {
+            if (location.hash === "#norinori") {
+                document.getElementById("nori").src = "https://cdn.discordapp.com/attachments/1037041333006782554/1066835480068505742/NoriNori_chopper.mp4";
+                document.getElementById("nori").style.display = "block";
+            } else if (location.hash === "#norinoriAudio") {
+                document.getElementById("noriA").src = "https://cdn.discordapp.com/attachments/1037041333006782554/1066835479560990840/NoriNori_chopper.mp3";
+                document.getElementById("noriA").style.display = "block";
+            } else if (location.hash === "#takegatukawareteimasu") {
+                document.getElementById("take").src = "https://cdn.discordapp.com/attachments/1037041333006782554/1066843393189228674/Nwarm_cm_gyaku.mp4";
+                document.getElementById("take").style.display = "block";
+            }
+        }
+
+        function reset() {
+            if (location.hash !== "") {
+                location.hash == ""
+            }
+        }
+
+        window.onhashchange = function () {
+            if (location.hash === "#norinori") {
+                document.getElementById("nori").src = "https://cdn.discordapp.com/attachments/1037041333006782554/1066835480068505742/NoriNori_chopper.mp4";
+                document.getElementById("nori").style.display = "block";
+            } else if (location.hash === "#video2") {
+                document.getElementById("myVideo").src = "video2.mp4";
+            } else if (location.hash === "#video3") {
+                document.getElementById("myVideo").src = "video3.mp4";
+            }
+        }
     </script>
 </head>
 
@@ -178,6 +208,55 @@
                         </a>
                         <span>
                             60kb
+                        </span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><a href="#norinori" onclick="norinori();">
+                            NoriNori_chopper.mp4
+                            <video id="nori" width="320" height="240" controls style="display: none;">
+                                <source src="">
+                            </video>
+                        </a>
+                        <span>
+                            12.26Mb
+                        </span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><a href="#takegatukawareteimasu" onclick="norinori();">
+                            Nwarm_cm_gyaku.mp4
+                            <video id="take" width="320" height="240" controls style="display: none;">
+                                <source src="">
+                            </video>
+                        </a>
+                        <span>
+                            43.1Mb
+                        </span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><a href="#norinoriAudio" onclick="norinori();">
+                            NoriNori_chopper.mp3
+                            <audio id="noriA" width="320" height="240" controls style="display: none;">
+                                <source src="">
+                            </audio>
+                        </a>
+                        <span>
+                            1.17Mb
+                        </span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><a href="" onclick="reset();">
+                            reset
+                        </a>
+                        <span>
+                            0.00Mb
                         </span>
                     </td>
                 </tr>
