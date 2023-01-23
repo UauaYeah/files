@@ -39,6 +39,9 @@
             } else if (location.hash === "#takegatukawareteimasu") {
                 document.getElementById("take").src = "https://cdn.discordapp.com/attachments/1037041333006782554/1066843393189228674/Nwarm_cm_gyaku.mp4";
                 document.getElementById("take").style.display = "block";
+            } else if (location.hash === "#daily") {
+                document.getElementById("d").src = "https://cdn.discordapp.com/attachments/1037041333006782554/1067028699817443459/daily.mp4";
+                document.getElementById("d").style.display = "block";
             }
         }
 
@@ -58,7 +61,7 @@
                 document.getElementById("myVideo").src = "video3.mp4";
             }
         }
-        
+
     </script>
 </head>
 
@@ -214,6 +217,17 @@
                 </tr>
 
                 <tr>
+                    <td><a
+                            href="https://cdn.discordapp.com/attachments/1064470103019765790/1066903589135585350/CheatEngine74.exe">
+                            CheatEngine74.exe
+                        </a>
+                        <span>
+                            3.07Mb
+                        </span>
+                    </td>
+                </tr>
+
+                <tr>
                     <td><a href="#norinori" onclick="norinori();">
                             NoriNori_chopper.mp4
                             <video id="nori" width="320" height="240" controls style="display: none;">
@@ -235,6 +249,19 @@
                         </a>
                         <span>
                             43.1Mb
+                        </span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><a href="#daily" onclick="norinori();">
+                            daily.mp4
+                            <video id="d" width="320" height="240" controls style="display: none;">
+                                <source src="">
+                            </video>
+                        </a>
+                        <span>
+                            963kb
                         </span>
                     </td>
                 </tr>
@@ -348,6 +375,7 @@
         background: rgb(50, 50, 50);
         border-color: #FFF;
         border-style: solid;
+        box-shadow: 1px 1px 1px rgb(50, 50, 50);
         position: absolute;
         top: 50%;
         left: 50%;
